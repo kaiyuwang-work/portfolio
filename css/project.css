@@ -166,7 +166,6 @@ footer{
 /*			background-color: rgba(0,24,60,1);*/
 			background-size: cover;
 			background-repeat: no-repeat;
-		    z-index: -1;
 }
 
 
@@ -192,4 +191,8 @@ footer{
 .moveup-footer {
 	position: relative;
 	bottom: 200px;
+}
+
+.zindex {
+	z-index: -1;
 }
