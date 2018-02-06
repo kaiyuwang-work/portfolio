@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link rel="stylesheet"  href = "css/jqnotes.css">
+<title>notes jQuery</title>
+</head>
+
+<body>
+
+	
+<div>
+	<h1>JQuery Notes</h1>
+	<code>$(Document).ready(function(){
+		alert("hello")
+	});/</code>
+	<p>等页面加载完,也可以简写为</p>
+	<code>$(function(){alert("hello")});</code>
+
+</div>
+
+<div>
+<h3>层级选择器几种写法</h3>
+<ul>
+	<li><code>$("div span")</code><p style="color: darkgreen">//选取div 里所有的span元素</p></li>
+	<li><code>$("div > span")</code><p style="color: darkgreen">//选取div 里名字是span的子元素 </p></li>
+	<li><code>$(".one+div")</code><p style="color: darkgreen">//选取class为one的下一个div同辈元素</p></li>
+	<li><code>$("#two~div")</code><p style="color: darkgreen">//选取id是two的元素后面的所有div同辈元素</p></li>
+	
+</ul>
+<h3>过滤选择器写法</h3>
+	<ul>
+		<li><code>$("div:first")</code><p style="color: darkgreen">//选取所有div里第一个div元素</p></li>
+		<li><code>$("div:last")</code><p style="color: darkgreen">//选取所有div里最后一个div元素</p></li>
+		<li><code>$("input:not(.myClass)")</code><p style="color: darkgreen">//选取class但不是myClass的input元素</p></li>
+		<li><code>$("input:even")</code><p style="color: darkgreen">//选取是偶数的input元素</p></li>
+		<li><code>$("input：eq(1)")</code><p style="color: darkgreen">//选取索引是1的input元素，index从0开始</p></li>
+		<li><code>$("input：get(1)")</code><p style="color: darkgreen">//选取索引大于不包括1的input元素，index从0开始，gt:greater than, 同理 lt:less than</p></li>
+		
+		
+	</ul>
+<h3>Checkbox Script</h3>
+<input type="checkbox" name="c"/>say whaaat
+<input type="checkbox" name="c"/>say whaaat
+<input type="checkbox" name="c"/>say whaaat
+<button id="btn">button</button>
+
+	
+	
+
+
+<h3>一个从ul里面取部分li的例子并隐藏</h3>
+<p><code> var $category = $("ul li:gt(5):not(:last)")</code><span style="color: darkgreen">//先获取ul元素下索引值大于5的li元素集合元素，然后去掉集合元素中，最后一个元素，这样，即可将从第7条开始至倒数第二条的所有品牌都获取到</span></p>
+	<p><code>$categroy.hide()</code><span style="color: darkgreen">//隐藏上面获取到的jquery对象</span></p>
+	
+<h3>链式操作一条更换span的img和text</h3>
+<p><code>$(this).find("span").css(“background"."url(img/up.gif) no repeat 0 0 ").text("取代原有的text变成这句")</code><span style="color: darkgreen">//更换图片，也改变了按钮文本的内容</span></p>
+	
+	
+
+	
+<p class="test">test</p>
+<button class="btn1">Toggle</button>
+	
+<h2>jQuery 中的DOM操作</h2>
+<h3>查找元素/属性节点</h3>
+	
+<p><code>var $li = $("ul li:eq(1)")；  var li_txt = $li.text(); alert(li_txt)</code><span style="color: darkgreen">//获取ul里第2个li节点，从0计数,获取改li的元素节点文本内容，并打印文本</span></p>
+	
+
+</div>
+
+<div id="dont">jquery magic</div>
+	
+<button class="whoops">whoops</button>
+
+<p><code>input type= text id = address value = "email address"</code></p>	
+<p><code>input type= text id = address value = "password "</code></p>	
+<p><code>input type= buttom value = sign in</code></p>	
+<p><code>$(#address).focus(function(){ var txt_value = $(this).val(); if (txt_value =="email address"){$(this).value("")}})</code><span style="color: darkgreen">//当选中email地址输入框，email提示语自动清空，用focus方法，同理用blur可以恢复</span></p>	
+
+<h3>DOM 操控 CSS</h3>
+<p><code>$("p").css("color"."red")--------$("p").css("fontSize":"30px"."backgroundColor":"#888888")-</code><span style="color: darkgreen">//css dom</span></p>	
+	
+	
+	
+	
+	
+<script  type="text/javascript" src="js/jqn.js"></script>	
+	
+	
+	
+	
+
+
+</body>
+</html>

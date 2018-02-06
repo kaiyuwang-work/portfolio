@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+			width:100%;height:100%;
+		} /*非常重要的样式让背景图片100%适应整个屏幕*/  
+.bg {
+			display: table;
+			width: 100%;
+			height: 100%;
+			padding: 100px 0;
+			text-align: center;
+			color: #fff; 
+/*			background: url("../images/marble.jpg") no-repeat bottom center;*/
+			background-color: rgba(0,24,60,1);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}  
+.my-navbar {
+			padding:20px 0;
+			transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+		}  
+.my-navbar a{
+			background:transparent !important;
+			color:#3D7D7E /*!important */
+		}  
+.my-navbar a:hover {
+			color:#f44271 !important;
+			background:transparent;
+			outline:0
+		}  
+/*.my-navbar a {
+			transition: color 0.5s ease-in-out;
+		}/*-webkit-transition ;-moz-transition*/  
+.top-nav {
+			padding:0;
+/*
+			background:#dedede; 
+			opacity:0.6;
+*/
+			background: rgba(25, 100, 125, 0.5);
+		}  
+.bg_fix{
+	position: fixed;
+}
+
+button.navbar-toggle {
+			background-color:#fbfbfb;
+		}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下  */
+button.navbar-toggle > span.icon-bar {
+			background-color:#dedede
+		}  
+.lato{
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
+
+.navStyle{
+	color:#0E5F7E;
+	opacity: 1;
+}
+.stayWhite{
+	color:rgba(194,146,48,1);
+/*	color:white;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height:100px;   /* footer的高度一定要是固定值*/ 
+    position:relative;
+    bottom:0px;
+    left:0px;
+    background: #333;
+}
+
+
+
+.text_shadow{
+	text-shadow:1px 1px 1px #141414;
+}
+.end{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	font-family: 'Cabin', sans-serif;
+	color:#dedede;
+	font-size: 20px;
+}
+
+
+.contact{
+	font-size: 11px;
+	position: relative;
+	top: 9px;
+	color:#dedede;
+	font-family: 'lato', sans-serif;
+}
+.contact2{
+	font-size: 11px;
+	position: relative;
+	top: 11px;
+	color:#dedede;
+	font-family: 'lato', sans-serif;
+}
+.contact_label{
+	font-family: 'Cabin', sans-serif;
+	color: beige;
+}
+
+.copyright{
+	font-size: 12px;
+	font-family: 'Cabin', sans-serif;
+	color: #979797;
+	position: absolute;
+	top: 75px;
+}
+.email{
+	color: #dedede;
+}
+.email:hover{
+	color: white;
+}
+.instagram{
+	color:rgba(194,146,48,1);
+	text-decoration:underline;
+}
+
+.testlayer {
+		display: table;
+			width: 100%;
+			height: 5012px;
+			padding: 100px 0;
+		    padding-right: 200px;
+			text-align: center;
+			color: #fff; 
+/*			background: url("../images/marble.jpg") no-repeat bottom center;*/
+/*			background-color: rgba(0,24,60,1);*/
+			background-size: cover;
+			background-repeat: no-repeat;
+}
+
+.image_set {
+	width: 100%;
+	
+}
